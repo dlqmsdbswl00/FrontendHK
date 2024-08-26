@@ -37,11 +37,11 @@
 
 	<h2>GET 전송방식</h2>
 	<p>Get방식은 한글이 깨질 수 있다</p>
-	<a href="html06_폼요소.html?id=hk&name=hankyung">가입</a>\
+	<a href="html06_폼요소.html?id=hk&name=hankyung">가입</a>
 
 	<hr />
 	<h2>폼 구성요소</h2>
-	<form action="html06_폼요소.html" method="get">
+	<form action="html06_폼요소.html" method="get" enctype="multipart/form-data">
 	<h3>회원가입</h3>
 	<fieldset>
 		<legend>기본정보</legend>
@@ -102,13 +102,10 @@
 			<small>데이터 전송시 선택된 태그만 값이 전송된다.</small>
 		</p>
 		<p>
-			<label for="LabelID">아이디 : </label>
-			<input type="text" id="labelID" name="id"/>
+			<label>파일업로드</label>
+			<input type="file" name="fileupload"/>
 		</p>
-		<p>
-			<label for="LabelID">아이디 : </label>
-			<input type="text" id="labelID" name="id"/>
-		</p>
+
 	</fieldset>
 	<input type="submit" value="가입"/>
 	</form>
